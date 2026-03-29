@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️Product Catalog</h1>
+            <p>Discover adorable products!</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 Search by name...">
+            <input type="text" id="categoryInput" placeholder="📂 Category...">
+            <button id="loadBtn">Refresh Products ✨</button>
+            <button id="addBtn">➕ Add Product</button>
+        </div>
+
+        <div id="products" class="products-grid"></div>
+
+        <!-- Add Product Modal -->
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Product 🥰</h2>
+                <form id="addForm">
+                    <input type="text" id="name" placeholder="Product Name" required>
+                    <input type="number" id="price" placeholder="Price" step="0.01" required>
+                    <input type="text" id="category" placeholder="Category">
+                    <textarea id="description" placeholder="Description"></textarea>
+                    <button type="submit">Create Product 💖</button>
+                </form>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
